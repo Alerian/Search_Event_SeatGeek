@@ -19,6 +19,16 @@ function search(e) {
   resultsEl.innerHTML = `<p> ${performing} 
   <br/> current events:${data.performers[0].num_upcoming_events}.</p><br/>`;
   console.log(data.performers[0].num_upcoming_events)
+    
+    //changes below committed by Steven
+    let performer_id = data.performers[0].id;
+    let apirequest2 = `https://api.seatgeek.com/2/events?performers.id=${performer_id}&client_id=${apiKey}`;
+    console.log(apirequest2)
+    fetch(apirequest2).then(response=>{
+        //console.log(response.json())
+        console.log( response.json());
+    })
+   
 })
 };
 
