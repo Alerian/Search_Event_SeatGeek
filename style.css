@@ -1,0 +1,35 @@
+body{
+    background: url(images/concert.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-color: black;
+
+}
+h1{
+    font-family:'Franklin Gothic Medium';
+    font-size:60px;
+}
+#card{
+    padding:20px;
+    position: relative;
+    left:25%;
+    width:50%;
+    background-color: rgba(255, 255, 255, 0.719);
+    border-radius:2px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+#wrapper{
+    font-size:20px;
+}
+#performers{
+    font-size:30px;
+    text-align: center;
+}
+#searchButton{
+    background: 4px solid white;
+    border: none;
+    font-size:20px;
+    padding: 5px;
+    width:200px;
+}
