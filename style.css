@@ -1,8 +1,12 @@
+*{
+    color: rgba(22, 22, 22, 0.808);
+    font-family:'Arial';
+}
 body{
     background: url(images/concert.jpg);
     background-repeat: no-repeat;
     background-size:cover;
-    background-color: black;
+    background-color: rgb(53, 53, 53);
 
 }
 h1{
