@@ -6,8 +6,12 @@ body{
 
 }
 h1{
-    font-family:'Franklin Gothic Medium';
-    font-size:60px;
+    font-family:'Alumni Sans Inline One', cursive;
+    text-shadow: rgba(255, 72, 0, 0.733) 2px 2px 2px;
+    font-size:100px;
+    color: rgba(255, 255, 255, 0.281);
+    font-weight: 400;
+    margin:10px;
 }
 #card{
     padding:20px;
@@ -23,13 +27,14 @@ h1{
     font-size:20px;
 }
 #performers{
-    font-size:30px;
+    font-size:20px;
+    border: none; padding: 5px;
     text-align: center;
 }
 #searchButton{
-    background: 4px solid white;
-    border: none;
+    background:rgb(255, 255, 255);
+    color: rgba(241, 129, 0, 0.986);
+    border: none;padding: 5px;
     font-size:20px;
-    padding: 5px;
     width:200px;
 }
