@@ -6,8 +6,6 @@ function search(e) {
   const performing = document.querySelector('#performers').value;
   let resultsEl = document.querySelector('#results');
   let apiKey = `MzEwOTQ3OTl8MTY3MTQ2NjcxNC44MTk5ODEz`;
-
-  // construct API using city and API Key
   let api =`https://api.seatgeek.com/2/performers?q=${performing}&client_id=${apiKey}`
 
   fetch(api).then(response => {
