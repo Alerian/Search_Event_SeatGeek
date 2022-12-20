@@ -16,7 +16,7 @@ function search(e) {
     return response.json();
   })
   .then((data) => {
-  resultsEl.innerHTML = `<p> ${performing} 
+   number_of_events = `<p> ${performing} 
   <br/> current events:${data.performers[0].num_upcoming_events}.</p><br/>`;
   console.log(data.performers[0].num_upcoming_events)
     
@@ -28,20 +28,17 @@ function search(e) {
         return response.json();
     })
     .then((data) => {
-      
+      let full_details = '';
       let event_counter = data.events.length
 
       for (let i = 0; i < event_counter; i++){
         let event = data.events[i];
-        console.log(event.title)
-        console.log(event.datetime_local)
-        console.log(event.type)
-        console.log(event.venue.display_location)
+        full_details+='<p><br/> Event: ' + event.title + ' ' + '<br/> Date: ' + event.datetime_local + '<br/> Date: '  + event.type + '<br/> Location: ' + event.venue.display_location;
       }
 
-        console.log(data)
-    });
-   
+      resultsEl.innerHTML = number_of_events + full_details
+      
+        console.log(data);
 })
 };
 
